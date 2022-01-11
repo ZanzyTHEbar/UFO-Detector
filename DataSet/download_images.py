@@ -1,7 +1,5 @@
-from imutils import paths
 import argparse
 import requests
-#import cv2
 import os
 
 # Defining main function
