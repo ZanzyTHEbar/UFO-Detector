@@ -14,6 +14,14 @@ This folder is dedicated to growing the dataset for training our classification 
 
 Here we will place all information regarding how to make your own dataset, as well as provide our current dataset(s) to you.
 
+### __*Development Steps*__
+
+-[] Gather all images from the sky using google images.
+-[] Train our model using deep Learning Lobe.
+-[] Deploy our model to the internet.
+-[] Deploy to Raspberry Pi.
+-[] Deploy to a mobile device.
+
 example of mermaid diagram with Font Awesome icons:
 
 ```mermaid
