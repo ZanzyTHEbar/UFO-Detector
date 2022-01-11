@@ -45,7 +45,17 @@ __*SETUP*__
 
 Pre-trained models exist within the [/Models](https://github.com/ZanzyTHEbar/UFO-Detector/tree/main/UFO-Detector/model) folder
 
+<<<<<<< HEAD
 In-order to use this software, git clone this repo onto your desired server device. This server device **MUST** have at least one camera
+
+=======
+This project utilises TensorFlow, and is compatible with most TensorFlow models, however it is optimised for Lobe generated models.
+Lobe is a free software utilised to expidite and automate the model training parameters. Utilising Lobe allows you, the user, to generate your own models
+if you so choose.
+
+In-order to use this software, git clone this repo onto your desired server device. This server device **MUST** have at least one camera
+
+>>>>>>> 4ec459e2ef0f3f3ca922f101e4a16e61b54b8cfe
 
 ```shell
 git clone https://github.com/ZanzyTHEbar/UFO-Detector.git 
@@ -79,3 +89,11 @@ __*SETUP*__
 3.
    1.
    2.
+
+## GOALS AND FUTURE FEATURES
+
+1. Compatiblity with all Tensor Flow Models
+   1. TensorFlowLite support and a branch of the project for mobile
+2. Full User interface for controlling a servo-enabled camera and or telescope
+
+3.
