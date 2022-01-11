@@ -50,8 +50,18 @@ In-order to use this software, git clone this repo onto your desired server devi
 ```shell
 git clone https://github.com/ZanzyTHEbar/UFO-Detector.git 
 ```
+Once the software stack is installed, run the main.py file using 
+
+```python
+python3 main.py
+```
+
+After this, a locally hosted server instance will launch and can be accessed via your browser. In the browser, ensure to enable camera permissions and connect your cameras. 
+
+Ensure that a trained model (custom or built-in) is inside of the [/Models](https://github.com/ZanzyTHEbar/UFO-Detector/tree/main/UFO-Detector/model) folder. 
 
 
+ 
 ## HOW TO SETUP REMOTE INSTANCE
 
 Setup is very straight forward, thankfully. You will need to purchase a few compents before you begin:
