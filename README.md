@@ -43,6 +43,15 @@ __*SETUP*__
 
 ## HOW TO USE
 
+Pre-trained models exist within the [/Models](https://github.com/ZanzyTHEbar/UFO-Detector/tree/main/UFO-Detector/model) folder
+
+In-order to use this software, git clone this repo onto your desired server device. This server device **MUST** have at least one camera 
+ 
+```shell
+git clone https://github.com/ZanzyTHEbar/UFO-Detector.git 
+```
+
+
 ## HOW TO SETUP REMOTE INSTANCE
 
 Setup is very straight forward, thankfully. You will need to purchase a few compents before you begin:
