@@ -22,6 +22,16 @@ The objects that are outside of the scope of the trained dataset are placed into
 
 ![Server Backend]()
 
+### __*Development Steps*__
+
+- [ ] Gather all images from the sky using google images.
+- [ ] Train our model using deep Learning Lobe.
+- [ ] Deploy our model to the internet.
+- [ ] Deploy to Raspberry Pi.
+- [ ] Deploy to a mobile device.
+- [ ] Integrate Smart Raspberrypi Telescope control and grid-based mapping of the sky.
+- [ ] Integrate a web-based interface for the telescope.
+
 ## HOW TO SETUP
 
 Setup is very straight forward, thankfully. You will need to purchase a few compents before you begin:
@@ -60,7 +70,8 @@ git clone https://github.com/ZanzyTHEbar/UFO-Detector.git
 
 Once the software stack is installed, run the main.py file using
 
-```python
+```shell
+
 python3 main.py
 ```
 
