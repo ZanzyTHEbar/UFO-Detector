@@ -38,8 +38,6 @@ def main():
         except:
             print("[INFO] error downloading {}...skipping".format(p))
 
-# Using the special variable
-# __name__
 if __name__ == "__main__":
     main()
 # Execute the code using "python3 download_images.py --urls urls.txt --output images" 
