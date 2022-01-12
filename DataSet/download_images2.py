@@ -17,11 +17,10 @@ ap.add_argument("-s", "--start", required=False,
 ap.add_argument("-v", "--verbose", required=False,
                 help="Print information as we go",
                 action="store_true", default=False)
-
 ap.add_argument("-d", "--dataset", required=True,
-                    help="path to input dataset")
+                help="path to input dataset")
 ap.add_argument("-r", "--remove", type=int, default=-1,
-                    help="whether or not duplicates should be removed (i.e., dry run)")
+                help="whether or not duplicates should be removed (i.e., dry run)")
 
 
 # grab the list of URLs from the input file, then initialize the
@@ -64,11 +63,13 @@ def return_images(file_contents, is_verbose=False):
 def write_images(images, output_dir, start=0, is_verbose=False):
     file_num = start
     for url, image in images:
-        p = os.path.sep.join([output_dir, "{}.jpg".format(str(file_num).zfill(8))])
+        p = os.path.sep.join(
+            [output_dir, "{}.jpg".format(str(file_num).zfill(8))])
         cv2.imwrite(p, image)
         file_num += 1
         if is_verbose:
             print("{} <- {}".format(p, url))
+
 
 def delete_duplicates():
     # grab the paths to all images in our input dataset directory and
@@ -87,6 +88,7 @@ def delete_duplicates():
         p.append(imagePath)
         hashes[h] = p
 
+
 def dhash(image, hashSize=8):
     # convert the image to grayscale and resize the grayscale image,
     # adding a single column (width) so we can compute the horizontal
@@ -98,6 +100,7 @@ def dhash(image, hashSize=8):
     diff = resized[:, 1:] > resized[:, :-1]
     # convert the difference image to a hash and return it
     return sum([2 ** i for (i, v) in enumerate(diff.flatten()) if v])
+
 
 if __name__ == "__main__":
     args = vars(ap.parse_args())
