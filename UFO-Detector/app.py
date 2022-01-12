@@ -31,6 +31,5 @@ def _process_base64(json_data):
     image = base64.decodebytes(image_base64)
     return Image.open(io.BytesIO(image))
 
-
 if __name__ == "__main__":
     app.run(host='127.0.0.1', port=5000, debug=True)

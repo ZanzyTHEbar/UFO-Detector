@@ -7,7 +7,8 @@ import requests
 
 
 # Save string of image file path below
-img_filepath = "<path/to/image.jpg>"
+string_of_image_file_path = "DataSet\images\Birds\B0000000.jpg"
+img_filepath = string_of_image_file_path
 
 # Create base64 encoded string
 with open(img_filepath, "rb") as f:
@@ -19,6 +20,7 @@ response = requests.post(
     url="http://localhost:5000/predict",
     json={"image": image_string},
 )
+
 data = response.json()
 top_prediction = data["predictions"][0]
 
