@@ -108,5 +108,6 @@ __*SETUP*__
 
 # USEFUL LINKS
 
-[Rotary Encoder and Stellarium Setup](https://www.instructables.com/Control-Your-Telescope-Using-Stellarium-Arduino/)
-[OnStep](https://onstep.groups.io/g/main/wiki/3861)
+1. [Rotary Encoder and Stellarium Setup](https://www.instructables.com/Control-Your-Telescope-Using-Stellarium-Arduino/)
+2. [OnStep](https://onstep.groups.io/g/main/wiki/3861)
+3. 
