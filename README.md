@@ -1,6 +1,6 @@
 # 🛸 UFO-Detector - A simple UFO detection tool 🛸
 
- This is a project dedicated to using image recogition technology to create an internet-accessible program for classifying known and unknown objects within the view of a telescope.
+ This is a project dedicated to using image recognition technology to create an internet-accessible program for classifying known and unknown objects within the view of a telescope.
 
 [![GitHub issues](https://img.shields.io/github/issues/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/issues) [![GitHub forks](https://img.shields.io/github/forks/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/network) [![GitHub stars](https://img.shields.io/github/stars/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/stargazers) [![GitHub license](https://img.shields.io/github/license/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/blob/main/LICENSE)
 
