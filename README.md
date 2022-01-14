@@ -105,3 +105,8 @@ __*SETUP*__
 2. Full User interface for controlling a servo-enabled camera and or telescope
 
 3.
+
+# USEFUL LINKS
+
+[Rotary Encoder and Stellarium Setup](https://www.instructables.com/Control-Your-Telescope-Using-Stellarium-Arduino/)
+[OnStep](https://onstep.groups.io/g/main/wiki/3861)

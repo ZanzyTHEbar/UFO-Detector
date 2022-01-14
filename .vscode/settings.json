@@ -1,11 +1,28 @@
 {
     "cSpell.words": [
+        "afmhot",
         "cmap",
+        "cmaps",
+        "dhash",
+        "fixpng",
+        "hstack",
+        "imdecode",
+        "IMREAD",
         "imshow",
         "imutils",
+        "imwrite",
         "mtpltcm",
+        "ncar",
+        "nipy",
+        "nparr",
+        "nrows",
+        "pyplot",
+        "Rmap",
+        "topng",
         "viridis",
         "vmax",
-        "vmin"
+        "vmin",
+        "vstack",
+        "yarg"
     ]
 }
