@@ -24,12 +24,15 @@ The objects that are outside of the scope of the trained dataset are placed into
 
 ### __*Development Steps*__
 
+- [ ] Change source code to use FastAPI instead of Flask.  
+- [ ] Create a GUI for the AI interface software.
+- [ ] Port the GUI to a web-based interface.
 - [ ] Gather all images from the sky using google images.
 - [ ] Train our model using deep Learning Lobe.
 - [ ] Deploy our model to the internet.
 - [ ] Deploy to Raspberry Pi.
 - [ ] Deploy to a mobile device.
-- [ ] Integrate Smart Raspberrypi Telescope control and grid-based mapping of the sky.
+- [ ] Integrate Smart Raspberrypi Telescope control and Stellarium Software interfacing.
 - [ ] Integrate a web-based interface for the telescope.
 
 ## HOW TO SETUP
