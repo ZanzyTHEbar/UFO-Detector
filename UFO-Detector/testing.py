@@ -6,7 +6,7 @@ import base64
 import requests
 
 # Save string of image file path below
-string_of_image_file_path = "C:/Users/zacar/Documents/GitHub/UFO-Detector/DataSet/images/Birds/B0000000.jpg"
+string_of_image_file_path = "C:/Users/zacar/Documents/GitHub/UFO-Detector/DataSet/images/airplanes/00000006.jpg"
 img_filepath = string_of_image_file_path
 
 # Create base64 encoded string

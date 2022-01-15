@@ -1,6 +1,3 @@
-#  -------------------------------------------------------------
-#   Copyright (c) Microsoft Corporation.  All rights reserved.
-#  -------------------------------------------------------------
 import os
 import io
 import re

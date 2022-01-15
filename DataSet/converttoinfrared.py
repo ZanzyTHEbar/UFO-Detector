@@ -29,7 +29,7 @@ def main(argv):
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-    # When everything done, release the capture
+    # When everything is done, release the capture
     cap.release()
     cv2.destroyAllWindows()
 

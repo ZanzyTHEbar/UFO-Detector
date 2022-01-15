@@ -1,10 +1,10 @@
-# 🛸 UFO-Detecor - A simple UFO detection tool 🛸
+# 🛸 UFO-Detector - A simple UFO detection tool 🛸
 
 Hello 👋, and welcome to the **UFO-DETECTOR** DataSet 👽
 
- This is a project dedicated to using image recogition technology to create an internet-accessible program for classifying known and unknown objects within the view of a telescope.
+ This is a project dedicated to using image recognition technology in order to create an internet-accessible program for classifying known and unknown objects within the view of a telescope or camera.
 
-[![GitHub issues](https://img.shields.io/github/issues/ZanzyTHEbar/UFO-Detecor?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detecor/issues) [![GitHub forks](https://img.shields.io/github/forks/ZanzyTHEbar/UFO-Detecor?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detecor/network) [![GitHub stars](https://img.shields.io/github/stars/ZanzyTHEbar/UFO-Detecor?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detecor/stargazers) [![GitHub license](https://img.shields.io/github/license/ZanzyTHEbar/UFO-Detecor?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detecor/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/issues) [![GitHub forks](https://img.shields.io/github/forks/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/network) [![GitHub stars](https://img.shields.io/github/stars/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/stargazers) [![GitHub license](https://img.shields.io/github/license/ZanzyTHEbar/UFO-Detector?style=plastic)](https://github.com/ZanzyTHEbar/UFO-Detector/blob/main/LICENSE)
 
 Welcome to the **DIY UFO Detector**, automated *AI* and *Telescope* enabled 👽.
 
@@ -20,9 +20,9 @@ To generate the dataset we are going to use Google images(for now). This will be
 
 In order to collect the data yourself, you will need to use the Google images search engine or API.
 
-To start off, we will put our keywords into the search engine and then use the below JavaScript code to get the URL's of the images.
+To start off, we will put our keywords into the search engine and then use the below JavaScript code (can also be copied from urlscrapper.js) to get the URL's of the images.
 
-Fire up the JavaScript console (I’ll assume you are using the Chrome web browser, but you can use Firefox as well) by clicking View => Developer => JavaScript Console.
+Fire up the JavaScript console (I’ll assume you are using the Chrome web browser, but you can use Firefox as well by clicking View => Developer => JavaScript Console).
 
 In Chrome, you can use the F12 key to open the JavaScript console, or you can right-click on screen and select Inspect, then navigate to the console.
 
@@ -145,7 +145,7 @@ grabUrls().then( function( urls ) {
 
 After executing the above snippet you’ll have a file named urls.txt in your default Downloads directory.
 
-Once this files is aquired, we can use the [download_images.py](UFO-Detector\download_images.py)
+Once this files is acquired, we can use the [download_images.py](UFO-Detector\download_images.py)
 script to download the images to your local project directory.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

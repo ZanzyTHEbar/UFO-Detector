@@ -1,16 +1,21 @@
 {
     "cSpell.words": [
         "afmhot",
+        "ATIP",
         "cmap",
         "cmaps",
         "dhash",
         "fixpng",
         "hstack",
+        "hubub",
         "imdecode",
+        "imgurl",
         "IMREAD",
         "imshow",
         "imutils",
         "imwrite",
+        "mousedown",
+        "mouseup",
         "mtpltcm",
         "ncar",
         "nipy",
@@ -21,10 +26,12 @@
         "Rmap",
         "Stellarium",
         "topng",
+        "urlscrapper",
         "viridis",
         "vmax",
         "vmin",
         "vstack",
-        "yarg"
+        "yarg",
+        "zacar"
     ]
 }

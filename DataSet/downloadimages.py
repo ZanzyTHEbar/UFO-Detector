@@ -65,78 +65,58 @@ def write_images(images, output_dir, start=0, is_verbose=False):
     file_num = start
     for url, image in images:
         p = os.path.sep.join(
-            [output_dir, "{}.jpg".format(str(file_num).zfill(8))])
+            [output_dir, "{}.png".format(str(file_num).zfill(8))])
         cv2.imwrite(p, image)
         file_num += 1
         if is_verbose:
             print("{} <- {}".format(p, url))
 
-def convert_jpg_topng():
-    print("[INFO] Converting .jpg to .png ...")
+
+def removeDuplicates():
+    delete = False
+    # grab the paths to all input images in the input directory
+    print("[INFO] finding duplicate images...")
     imagePaths = list(paths.list_images(args["dataset"]))
+    # initialize our images dictionary
+    # loop over the image paths
     for imagePath in imagePaths:
-        # load the input image and compute the hash
-        im1 = Image.open(imagePath)
-        im1.save(imagePath)
-        import subprocess
-        process = subprocess.call('fixpng.sh "images"', shell=True)
-        
-        #process.wait() # Wait for process to complete.
+        try:
+            # try to load the image
 
-        # iterate on the stdout line by line
-        for line in process.stdout.readlines():
-            print(line) 
-
-
-def delete_duplicates():
-    # grab the paths to all images in our input dataset directory and
-    # then initialize our hashes dictionary
-    print("[INFO] computing image hashes...")
-    imagePaths = list(paths.list_images(args["dataset"]))
-    hashes = {}
-    # loop over our image paths
-    for imagePath in imagePaths:
-        # load the input image and compute the hash
-        image = cv2.imread(imagePath)
-        
-        h = dhash(image)
-        # grab all image paths with that hash, add the current image
-        # path to it, and store the list back in the hashes dictionary
-        p = hashes.get(h, [])
-        p.append(imagePath)
-        hashes[h] = p
-    
-    for (h, hashedPaths) in hashes.items():
-	# check to see if there is more than one image with the same hash
-        if len(hashedPaths) > 1:
-            # check to see if this is a dry run
-            if args["remove"] <= 0:
-                # initialize a montage to store all images with the same
-                # hash
-                montage = None
-                # loop over all image paths with the same hash
-                for p in hashedPaths:
-                    # load the input image and resize it to a fixed width
-                    # and heightG
-                    image = cv2.imread(p)
-                    image = cv2.resize(image, (150, 150))
-                    # if our montage is None, initialize it
-                    if montage is None:
-                        montage = image
-                    # otherwise, horizontally stack the images
-                    else:
-                        montage = np.hstack([montage, image])
-                # show the montage for the hash
-                print("[INFO] hash: {}".format(h))
-                cv2.imshow("Montage", montage)
-                cv2.waitKey(0)
-            # otherwise, we'll be removing the duplicate images
+            # if OpenCV cannot load the image then the image is likely
+            # corrupt so we should delete it
+            image = cv2.imread(imagePath)
+            # if the image is `None` then we could not properly load it
+            # from disk, so delete it
+            # compute the difference hash for the image and update the
+            # images dictionary
+            if image is None:
+                delete = True
             else:
-                # loop over all image paths with the same hash *except*
-                # for the first image in the list (since we want to keep
-                # one, and only one, of the duplicate images)
-                for p in hashedPaths[1:]:
-                    os.remove(p)
+                h = dhash(image)
+                p = h.get(h, [])
+                p.append(imagePath)
+                h[h] = p
+                # initialize our duplicate image paths list
+                duplicates = []
+                # loop over the hashes dictionary
+                for (k, v) in list(h[h].items()):
+                    # grab the paths to all duplicate images
+                    if len(h[h]) > 1:
+                        if h[h] == h[h]:
+                            duplicates.append((v, h[h][k]))
+                            print("[INFO] deleting {}".format(duplicates))
+                            os.remove(duplicates)
+                            # return the duplicate image paths
+                            return duplicates
+
+        except:
+            print("Except")
+            delete = True
+    # check to see if the image should be deleted
+    if delete:
+        print("[INFO] deleting {}".format(imagePath))
+        os.remove(imagePath)
 
 
 def dhash(image, hashSize=8):
@@ -163,7 +143,5 @@ if __name__ == "__main__":
     url_data = read_urls(urls, is_verbose)
     images = return_images(url_data, is_verbose)
     write_images(images, output_dir, start, is_verbose)
-    convert_jpg_topng()
-    #delete_duplicates()
-    delete_duplicates()
+    removeDuplicates()
     print("[INFO] done")
