@@ -37,6 +37,24 @@ The objects that are outside of the scope of the trained dataset are placed into
 
 ## HOW TO SETUP
 
+Currently, the software is in early development. To test the current image recognition model please use the following steps:
+
+1. Download the source code from Github.
+2. cd into the UFO-Detector directory.
+3. execute the following command to start the server:
+
+```shell
+python3 app.py
+```
+
+4. Next open a new terminal window and execute the following command to perform a post request to the server (which returns a prediction with confidence):
+
+```shell
+python3 testing.py
+```
+
+As the application becomes more robust, and the AI model is trained, the testing.py file will be removed and replaced with a GUI.
+
 Setup is very straight forward, thankfully. You will need to purchase a few components before you begin:
 
 __*Materials for purchase*__
@@ -74,7 +92,6 @@ git clone https://github.com/ZanzyTHEbar/UFO-Detector.git
 Once the software stack is installed, run the main.py file using
 
 ```shell
-
 python3 main.py
 ```
 
