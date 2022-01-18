@@ -44,6 +44,8 @@ Currently, the software is in early development. To test the current image recog
 3. execute the following command to start the server:
 
 ```shell
+python3 -m pip install -r requirements.txt
+
 python3 app.py
 ```
 
