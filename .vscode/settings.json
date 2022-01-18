@@ -16,6 +16,7 @@
         "imshow",
         "imutils",
         "imwrite",
+        "Jetpacks",
         "mousedown",
         "mouseup",
         "mtpltcm",
@@ -24,6 +25,7 @@
         "nparr",
         "nrows",
         "openapi",
+        "Paramotor",
         "pyplot",
         "Raspberrypi",
         "Rmap",
@@ -35,6 +37,7 @@
         "vmax",
         "vmin",
         "vstack",
+        "Wingsuit",
         "yarg",
         "zacar"
     ]

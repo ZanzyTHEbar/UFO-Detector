@@ -14,6 +14,33 @@ This folder is dedicated to growing the dataset for training our classification 
 
 Here we will place all information regarding how to make your own dataset, as well as provide our current dataset(s) to you.
 
+Once certain classifications have been made, we will be able to further classify the incoming data using characteristics of the  estimate object. E.x if the object is detected as an asteroid or satellite with reasonable confidence, we will be able to classify it further based on the velocity, size, projected trajectory, etc.
+
+Image classification is a very important part of the development of this project, with added features such as this being a great way to further improve the accuracy of our model.
+
+### __*List of things to Train AI on*__
+
+- [ ] Paraglider/Paramotor.  
+- [ ] Skydivers/Wingsuit.
+- [ ] Small planes.
+- [x] Commercial Aircraft.
+- [ ] Helicopter.
+- [ ] Military Aircraft.
+- [ ] Jetpacks.
+- [ ] Drones.
+- [ ] RC Planes.
+- [x] Avians.
+- [ ] Bugs.
+- [ ] Solar phenomena (Sundogs).
+- [ ] Space phenomena (Stars).
+- [ ] Satellites.
+- [ ] ISS.
+- [ ] Meteorites.
+- [ ] Asteroids.
+- [ ] Comets.
+- [ ] Planets.
+- [ ] Moons.
+
 ## COLLECTING THE DATASET
 
 To generate the dataset we are going to use Google images(for now). This will be the first step in our process.
