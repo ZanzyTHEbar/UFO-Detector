@@ -34,6 +34,21 @@
                     window.close()
 ```
 
+example of mermaid diagram with Font Awesome icons:
+
+```mermaid
+    graph LR
+        fa:fa-check-->fa:fa-coffee
+```
+
+```markdown
+
+    ```mermaid
+    graph LR
+        fa:fa-check-->fa:fa-coffee
+    ```
+```
+
 ## USEFUL LINKS
 
 1. [Python PythonSimpleGUI](https://www.youtube.com/watch?v=IWDC9vcBIFQ)

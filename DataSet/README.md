@@ -147,12 +147,3 @@ After executing the above snippet you’ll have a file named urls.txt in your de
 
 Once this files is acquired, we can use the [download_images.py](UFO-Detector\download_images.py)
 script to download the images to your local project directory.
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-example of mermaid diagram with Font Awesome icons:
-
-```mermaid
-graph LR
-    fa:fa-check-->fa:fa-coffee
-```
