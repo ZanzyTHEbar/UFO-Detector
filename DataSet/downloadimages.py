@@ -24,7 +24,7 @@ ap.add_argument("-r", "--remove", type=int, default=-1,
                 help="whether or not duplicates should be removed (i.e., dry run)")
 
 
-# grab the list of URLs from the input file, then initialize the
+# grab the list of URLs from the input file, then initialize the total
 def read_url_list(filename):
     return open(filename).read().strip().split("\n")
 
