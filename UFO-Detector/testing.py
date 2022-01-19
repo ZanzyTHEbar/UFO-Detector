@@ -8,7 +8,7 @@ import cv2
 def get_prediction_from_image_url(argv):
     # ex: "/airplanes/00000001.jpg"
     image_to_predict = input(
-        "Enter the folder path and image name of them image to predict: ")
+        "Enter the folder path and image name of the image to predict: ")
     input_values = image_to_predict
     # Save string of image file path below
     string_of_image_file_path = "C:/Users/zacar/Documents/GitHub/UFO-Detector/DataSet/images/" + input_values
