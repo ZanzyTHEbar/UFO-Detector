@@ -33,7 +33,7 @@ def get_prediction_from_image_url(argv):
           .format(top_prediction["label"], top_prediction["confidence"]))
 
 
-def get_prediction_video(argv):
+def get_prediction_from_video_feed(argv):
 
     cap = cv2.VideoCapture(0)
 
@@ -70,4 +70,4 @@ def get_prediction_video(argv):
 
 if __name__ == "__main__":
     # sys.exit(get_prediction_from_image_url(sys.argv))
-    sys.exit(get_prediction_video(sys.argv))
+    sys.exit(get_prediction_from_video_feed(sys.argv))
