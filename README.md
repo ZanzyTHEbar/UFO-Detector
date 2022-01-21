@@ -36,12 +36,15 @@ The objects that are outside of the scope of the trained dataset are placed into
 - [ ] Integrate a web-based interface for the telescope.
 
 ## HOW TO SETUP
-
+```
+This section is currently 100% factual - it will be actively changed as the program is developed and expanded - until first Alpa, when the below draft section will become the only instructions section. 
+```
 Currently, the software is in early development. To test the current image recognition model please use the following steps:
 
 1. Download the source code from Github.
 2. cd into the UFO-Detector directory.
-3. execute the following command to start the server:
+3. By default, the program will start in live-camera-feed mode. To change this, append the starting command. 
+4. execute the following command to start the server:
 
 ```shell
 python3 -m pip install -r requirements.txt
@@ -53,6 +56,14 @@ python3 app.py
 
 ```shell
 python3 testing.py
+```
+ 
+-OR FOR SINGLE IMAGE MODE-
+
+Use the -f flag and the name of the folder that contains the image(s) and activate Photo-mode with the -p flag
+
+```shell
+python3 testing.py -f foldername -p
 ```
 
 As the application becomes more robust, and the AI model is trained, the testing.py file will be removed and replaced with a GUI.
@@ -73,9 +84,12 @@ __*SETUP*__
 3.
    1.
    2.
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ## HOW TO USE
 
+```
+This section is not currently 100% factual - it is a draft for when the fully-built program is finalised. 
+```
 Pre-trained models exist within the [/Models](https://github.com/ZanzyTHEbar/UFO-Detector/tree/main/UFO-Detector/model) folder
 
 This project uses Lobe to generate the model, for this reason, it is recommended that you use the Lobe GUI to generate your model, should you wish to use a custom model. This is a free software, and can be found at: [Lobe](https://lobe.ai/)
@@ -85,7 +99,7 @@ Lobe is a free software utilized to expedite and automate the model training par
 This project utilises TensorFlow, and is compatible with most TensorFlow models, however it is optimized for Lobe generated models.
 
 In-order to use this software, git clone this repo onto your desired server device. This server device **MUST** have at least one camera
-connected to it.
+connected on the same network, and whos feed is exposed to it. Once the camera is connected to the device and picked up by the so
 
 ```shell
 git clone https://github.com/ZanzyTHEbar/UFO-Detector.git 
