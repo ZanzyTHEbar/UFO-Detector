@@ -18,7 +18,7 @@ Once certain classifications have been made, we will be able to further classify
 
 Image classification is a very important part of the development of this project, with added features such as this being a great way to further improve the accuracy of our model.
 
-### __*List of things to Train AI on*__
+### ***List of things to Train AI on***
 
 - [ ] Paraglider/Paramotor.  
 - [ ] Skydivers/Wingsuit.
@@ -172,5 +172,5 @@ grabUrls().then( function( urls ) {
 
 After executing the above snippet you’ll have a file named urls.txt in your default Downloads directory.
 
-Once this files is acquired, we can use the [download_images.py](UFO-Detector\download_images.py)
+Once this files is acquired, we can use the [download_images.py](UFO-Detector\downloadimages.py)
 script to download the images to your local project directory.

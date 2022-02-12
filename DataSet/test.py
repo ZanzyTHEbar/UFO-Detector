@@ -13,4 +13,4 @@ def main():
 
 if __name__ == "__main__":
     if main() == 0:
-        print("Program finished")
+        print("Program finished") #TODO: Add a way to exit the program
