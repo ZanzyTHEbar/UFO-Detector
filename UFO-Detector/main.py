@@ -60,7 +60,6 @@ def Signup():
             window.close()
     return username, password, is_logged_in
 
-
 class LoginWindow:
     def __init__(self, username, password, is_logged_in):
         self.username = username
