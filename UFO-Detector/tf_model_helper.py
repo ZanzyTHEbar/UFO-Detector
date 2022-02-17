@@ -1,6 +1,3 @@
-#  -------------------------------------------------------------
-#   Copyright (c) Microsoft Corporation.  All rights reserved.
-#  -------------------------------------------------------------
 """
 Skeleton code showing how to load and run the TensorFlow SavedModel export package from Lobe.
 """
