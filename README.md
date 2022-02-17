@@ -94,7 +94,7 @@ Currently, the software is in early development. To test the current image recog
    This section is not currently 100% factual - it is a draft for when the fully-built program is finalized. 
    ```
 
-Pre-trained models exist within the [/Models](https://github.com/ZanzyTHEbar/UFO-Detector/tree/main/UFO-Detector/model) folder
+Pre-trained models exist within the [~/Models](https://github.com/ZanzyTHEbar/UFO-Detector/tree/main/UFO-Detector/model) folder
 
 This project uses Lobe to generate the model, for this reason, it is recommended that you use the Lobe GUI to generate your model, should you wish to use a custom model. This is a free software, and can be found at: [Lobe](https://lobe.ai/)
 
