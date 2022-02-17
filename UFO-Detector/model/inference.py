@@ -1,12 +1,12 @@
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from PIL import Image, ImageOps
 import numpy as np
 
 # Load the model
-model = load_model('thebirdsandtheplanes.h5')
+model = load_model('')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 # Replace this with the path to your image
-image = Image.open('<IMAGE_PATH>')
+image = Image.open('Drone.png')
 size = (224, 224)
 image = ImageOps.fit(image, size, Image.ANTIALIAS)
 #turn the image into a numpy array
@@ -17,4 +17,5 @@ normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
 data[0] = normalized_image_array
 # run the inference
 prediction = model.predict(data)
+print("this is the prediction")
 print(prediction)
