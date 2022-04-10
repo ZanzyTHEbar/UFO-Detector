@@ -54,3 +54,4 @@ example of mermaid diagram with Font Awesome icons:
 1. [Python PythonSimpleGUI](https://www.youtube.com/watch?v=IWDC9vcBIFQ)
 2. [Python PythonSimpleGUI](https://www.youtube.com/watch?v=Htc-eWCafGs)
 3. [Python PythonSimpleGUI](https://www.youtube.com/watch?v=e1TR9Wq0QRs)
+4. [Machine Learning](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265185)
