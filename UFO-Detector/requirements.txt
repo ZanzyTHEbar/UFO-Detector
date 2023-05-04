@@ -1,4 +1,4 @@
-flask==2.0.2
+flask==2.2.5
 pillow==8.4.0
 tensorflow==2.7.0
 requests==2.26.0 # Used in testing.py
@@ -29,7 +29,7 @@ docopt==0.6.2
 dominate==2.6.0
 eventlet==0.31.0
 filelock==3.4.2
-Flask==2.0.2
+Flask==2.2.5
 Flask-Bootstrap==3.3.7.1
 Flask-MQTT==1.1.1
 flask-ngrok==0.0.25
