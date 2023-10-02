@@ -74,7 +74,7 @@ micropython-cpython-uzlib==0.1
 multidict==5.1.0
 numpy==1.21.5
 oauthlib==3.2.2
-opencv-contrib-python==4.5.5.62
+opencv-contrib-python==4.8.1.78.62
 opt-einsum==3.3.0
 packaging==21.3
 paho-mqtt==1.5.1
