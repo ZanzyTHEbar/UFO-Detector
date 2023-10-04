@@ -116,7 +116,7 @@ tensorflow-io-gcs-filesystem==0.23.1
 termcolor==1.1.0
 toml==0.10.2
 typing-extensions==3.10.0.0
-urllib3==1.26.6
+urllib3==1.26.17
 virtualenv==20.13.0
 virtualenv-clone==0.5.7
 virtualenvwrapper==4.8.4
