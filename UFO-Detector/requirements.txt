@@ -121,7 +121,7 @@ virtualenv==20.13.0
 virtualenv-clone==0.5.7
 virtualenvwrapper==4.8.4
 visitor==0.1.3
-Werkzeug==2.0.1
+Werkzeug==3.0.1
 wrapt==1.13.3
 wsproto==1.0.0
 yarg==0.1.9
