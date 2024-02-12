@@ -24,7 +24,7 @@ dependency-injector==4.32.3
 discord==1.0.1
 discord.py==1.7.3
 distlib==0.3.4
-dnspython==1.16.0
+dnspython==2.6.0rc1
 docopt==0.6.2
 dominate==2.6.0
 eventlet==0.31.0
