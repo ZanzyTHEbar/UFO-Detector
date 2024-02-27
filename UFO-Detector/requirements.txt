@@ -72,7 +72,7 @@ micropython-cpython-usocket==0.1
 micropython-cpython-ussl==0.1
 micropython-cpython-uzlib==0.1
 multidict==5.1.0
-numpy==1.21.5
+numpy==1.22.2
 oauthlib==3.2.2
 opencv-contrib-python==4.5.5.62
 opt-einsum==3.3.0
@@ -127,3 +127,4 @@ wsproto==1.0.0
 yarg==0.1.9
 yarl==1.6.3
 zipp==3.7.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
