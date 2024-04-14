@@ -48,7 +48,7 @@ h5py==3.6.0
 hpack==4.0.0
 hypercorn==0.13.2
 hyperframe==6.0.1
-idna==2.10
+idna==3.7
 imagezmq==1.1.1
 importlib-metadata==4.10.0
 imutils==0.5.4
